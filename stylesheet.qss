@@ -1,0 +1,92 @@
+
+QWidget {
+    border: 0px;
+    font-size: 22px;
+    font-family: "Yu Gothic UI Semilight";
+}
+
+QToolBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #eee
+        stop:0.05 #bbb
+        stop:0.06 #888
+        stop:0.5 #555
+        stop:0.9 #555
+        stop: 1.0 #666
+    );
+    border-top: 1px solid #333;
+    icon-size: 24px;
+    max-height: 32px;
+    min-height: 32px;
+}
+
+
+QToolButton:hover {
+    background: #bbb;
+    border: 1px solid #ddd;
+}
+
+QToolButton:checked {
+    background: #bbb;
+    border: 1px solid #ddd;
+}
+
+QToolBar > QLabel {
+    color: white;
+    padding-left:10px;
+}
+
+
+QToolBar > QLineEdit {
+    border: 0px;
+}
+
+QLineEdit {
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 1px;
+}
+
+QSplitter::handle:horizontal {
+    background: #333;
+    width: 1px;
+}
+
+QTableView {
+    gridline-color: #333;
+}
+
+QHeaderView::section {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #eee
+        stop:0.05 #bbb
+        stop:0.06 #888
+        stop:0.5 #555
+        stop:0.9 #555
+        stop: 1.0 #666
+    );
+    color: white;
+    border-top: 1px solid #333;
+    border-left: 1px solid #ccc;
+    max-height: 32px;
+    min-height: 32px;
+}
+
+QHeaderView::section:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #fff
+        stop:0.05 #ddd
+        stop:0.06 #aaa
+        stop:0.5 #777
+        stop:0.9 #777
+        stop: 1.0 #888
+    );
+}
+
+QHeaderView::section:first {
+    border-left: 0px;
+}
+
